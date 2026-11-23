@@ -1,0 +1,60 @@
+# Project Overview
+
+Problem Statement:
+
+Sleep apnea involves repeated interruptions or reductions in breathing during sleep. Detecting these events can help identify sleep-related breathing abnormalities.
+
+Traditional sleep monitoring systems may require multiple sensors, making the monitoring process complex.
+
+This project explores the possibility of using ECG signals to derive respiratory information and identify potential apnea events through signal processing.
+
+Proposed Solution:
+
+The proposed system uses ECG as its input signal.
+
+ECG is processed to identify R-peaks. Respiratory information is extracted from variations in the detected R-peak amplitudes, generating an ECG-Derived Respiration signal.
+
+The EDR signal is then analyzed for respiratory amplitude and frequency changes.
+
+ECG-derived HRV features are also analyzed as supporting physiological information.
+
+The system provides an experimental classification of signal segments and calculates an estimated AHI.
+
+Block Diagram:
+
+ECG Input
+↓
+Preprocessing
+↓
+R-Peak Detection
+↓
+RR Interval Analysis
+↓
+EDR Extraction
+↓
+EDR Bandpass Filtering
+↓
+Envelope Extraction
+↓
+Feature Analysis
+↓
+Apnea Classification
+↓
+AHI and Severity Estimation
+
+Applications:
+
+- ECG signal analysis
+- Research in sleep monitoring
+- Respiratory monitoring research
+- Biomedical signal processing
+- Wearable health-monitoring research
+- Exploring single-sensor sleep-monitoring systems
+
+Project Scope:
+
+This project is an experimental ECG-based apnea detection implementation.
+
+The primary objective is to explore the relationship between ECG-derived respiratory features and apnea-related signal changes.
+
+It does not replace a clinically validated sleep study or diagnostic device.
